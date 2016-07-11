@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFF</color>
 
     <!--Material design color palette for application-->
     <color name="colorMainRed">#F44336</color>

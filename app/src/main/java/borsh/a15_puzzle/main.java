@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -379,7 +380,13 @@ public class main extends AppCompatActivity
 
     private void gameOver()
     {
-        Toast.makeText(main.this, "You Win!!!", Toast.LENGTH_LONG).show();
+        LayoutInflater inflater = getLayoutInflater();
+        LinearLayout LLwin = (LinearLayout) inflater.inflate(R.layout.custom_toast, null);
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(LLwin);
+        toast.show();
 
         //Refresh start button
         _isPlaying = false;
@@ -502,7 +509,7 @@ public class main extends AppCompatActivity
             //Start action
             _isPlaying = true;
             main.this.setStartText(_isPlaying);
-            main.this.generateArray();
+            //main.this.generateArray();
             main.this.restoreTiles();
             main.this._curMoves = 0;
             TextView TVcurrentMoves = (TextView) main.this.findViewById(R.id.tvMoves);
