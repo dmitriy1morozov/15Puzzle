@@ -509,7 +509,7 @@ public class main extends AppCompatActivity
             //Start action
             _isPlaying = true;
             main.this.setStartText(_isPlaying);
-            //main.this.generateArray();
+            main.this.generateArray();
             main.this.restoreTiles();
             main.this._curMoves = 0;
             TextView TVcurrentMoves = (TextView) main.this.findViewById(R.id.tvMoves);
