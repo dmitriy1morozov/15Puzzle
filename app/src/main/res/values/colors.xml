@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#000000</color>
+
+    <!--Material design color palette for application-->
+    <color name="colorMainRed">#F44336</color>
+    <color name="colorMainOrange">#FF9800</color>
+    <color name="colorMainGreen">#4CAF50</color>
+    <color name="colorMainTeal">#009688</color>
+    <color name="colorMainIndigo">#3F51B5</color>
+    <color name="colorMainBlue">#2196F3</color>
+    <color name="colorMainGrey">#9E9E9E</color>
+    <color name="colorMainBlueGray">#607D8B</color>
+
+</resources>

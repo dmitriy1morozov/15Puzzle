@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+
+    tools:context=".main"
+    android:id="@+id/LLmain">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FLstart">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStart"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textSize="@dimen/testSize"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TLinfo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TableRow
+            android:id="@+id/TRbestResult">
+            <TextView
+                android:id="@+id/tvBestMoves"
+                android:text="Best :"/>
+
+            <Space
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvBestClock"
+                android:background="@drawable/access_time_black_18x18"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvBestTime"
+                android:text="0:0"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TRcurResult">
+
+            <TextView
+                android:id="@+id/tvMoves"
+                android:text="Moves :"/>
+
+            <Space
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvClock"
+                android:background="@drawable/timer_black_18x18"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvTime"
+                android:text="0:0"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TLgameTable"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:stretchColumns="*">
+
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FLcolor"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LLcolor"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
